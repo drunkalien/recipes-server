@@ -4,7 +4,7 @@ import { app } from "./app";
 
 app.listen(5000, () => console.log("app is running"));
 
-const DB = process.env.MONGO_URI || "mongodb://localhost:27017/recipe-app";
+const DB = process.env.MONGO_URL || "mongodb://localhost:27017/recipe-app";
 
 mongoose
   .connect(DB, {})
