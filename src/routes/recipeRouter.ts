@@ -11,7 +11,7 @@ router
 router
   .route("/:id")
   .get(recipeController.getRecipe)
-  .put(recipeController.updateRecipe)
+  .patch(recipeController.updateRecipe)
   .delete(recipeController.deleteRecipe);
 
 export default router;
